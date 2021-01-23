@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{%static 'hub/main.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{%static 'hub/main.css' %}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+<canvas></canvas>
+    <main>
+        <button type ="button" class="btn btn-primary"> Save </button>
+        <section class="colors">
+            <input type="text" class="color-picker" value="#171717"/>
+        </section>
+
+        <section class="thickness">
+            <input type="number" class="stroke-weight" value="3"/>
+        </section>
+
+        <button class="clear">O</button>
+    </main>
+    <script src="{% static 'hub/main.js' %}"></script>
+</body>
+</html>
