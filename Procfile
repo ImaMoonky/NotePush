@@ -1,1 +1,1 @@
-web: gunicorn NoteWeb.wsgi:application --log-file - --log-level debug
+web: gunicorn NoteWeb.wsgi
